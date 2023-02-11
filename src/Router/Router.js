@@ -1,10 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
-import Dashboard from "../Pages/Dashboard/Dashboard";
 import Login from "../Pages/Register/Login";
 import Register from "../Pages/Register/Register";
 import Home from "../Pages/Home/Home";
 import About from "../Pages/About/About";
+import Dashboard from "../Pages/Dashboard/Dashboard";
+import DashboardLayout from "../Layout/DashboardLayout";
 
 const router = createBrowserRouter([
     {
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/dashboard',
-                element: <Dashboard/>,
+                element: <DashboardLayout/>,
                 // errorElement: <DisplayError></DisplayError>,
                 children: [
                     {
