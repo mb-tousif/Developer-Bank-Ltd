@@ -56,9 +56,9 @@ export default function SideNavbar() {
           <span className="tooltip">Files</span>
         </li>
         <li>
-          <Link to={"/dashboard"}>
+          <Link to={"/dashboard/moneyTransfer"}>
             <i className="bx bx-cart-alt"></i>
-            <span className="links_name">Order</span>
+            <span className="links_name">Transfer</span>
           </Link>
           <span className="tooltip">Order</span>
         </li>

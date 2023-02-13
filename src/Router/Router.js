@@ -6,6 +6,7 @@ import Home from "../Pages/Home/Home";
 import About from "../Pages/About/About";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import DashboardLayout from "../Layout/DashboardLayout";
+import MoneyTransfer from "../Pages/Dashboard/MoneyTransfer";
 
 const router = createBrowserRouter([
     {
@@ -37,7 +38,11 @@ const router = createBrowserRouter([
                     {
                         path: '/dashboard',
                         element: <Dashboard/>
-                    }
+                    },
+                    {
+                        path: '/dashboard/moneyTransfer',
+                        element: <MoneyTransfer/>
+                    },
                 ]
             }
         ]
