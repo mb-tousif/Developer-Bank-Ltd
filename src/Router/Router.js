@@ -7,6 +7,7 @@ import About from "../Pages/About/About";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import DashboardLayout from "../Layout/DashboardLayout";
 import MoneyTransfer from "../Pages/Dashboard/MoneyTransfer";
+import Carriers from "../Pages/Carriers/Carriers";
 
 const router = createBrowserRouter([
     {
@@ -19,16 +20,20 @@ const router = createBrowserRouter([
                 element: <Home/>
             },
             {
+                path: '/about',
+                element: <About/>
+            },
+            {
                 path: '/login',
                 element: <Login/>
             },
             {
-                path: '/signup',
-                element: <Register/>
+                path: '/carriers',
+                element: <Carriers/>
             },
             {
-                path: '/about',
-                element: <About/>
+                path: '/signup',
+                element: <Register/>
             },
             {
                 path: '/dashboard',

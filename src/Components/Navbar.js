@@ -30,16 +30,16 @@ export default function Navbar() {
                 About
               </Link>
               <Link
+                to="/carriers"
+                className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
+              >
+                Carriers
+              </Link>
+              <Link
                 to="/dashboard"
                 className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
               >
                 Dashboard
-              </Link>
-              <Link
-                to="/signup"
-                className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
-              >
-                Sign Up
               </Link>
               <Link
                   to="/login"
@@ -78,16 +78,16 @@ export default function Navbar() {
           About
         </Link>
         <Link
+          to="/carriers"
+          className="text-white block px-3 py-2 rounded-md text-base font-medium"
+        >
+          Carriers
+        </Link>
+        <Link
           to="/dashboard"
           className="text-white block px-3 py-2 rounded-md text-base font-medium"
         >
           Dashboard
-        </Link>
-        <Link
-          to="/signup"
-          className="text-white block px-3 py-2 rounded-md text-base font-medium"
-        >
-          Sign Up
         </Link>
         <Link
             to="/login"
