@@ -10,8 +10,8 @@ export default function Login() {
           <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
             <div className="max-w-md mx-auto">
               <div>
-                <h1 className="text-2xl font-semibold">
-                  Login Form with Floating Labels
+                <h1 className="text-2xl text-[#03A776] font-semibold">
+                  Login to your account
                 </h1>
               </div>
               <div className="divide-y divide-gray-200">
@@ -58,7 +58,7 @@ export default function Login() {
                       Don't have an account?
                       <Link
                         to="/signup"
-                        className="font-medium text-[#03A776] hover:text-[#a7a203] focus:outline-none focus:underline transition ease-in-out duration-150"
+                        className="font-medium ml-2 text-[#03A776] hover:text-[#0D1519] focus:outline-none focus:underline transition ease-in-out duration-150"
                       >
                         Sign Up
                       </Link>
