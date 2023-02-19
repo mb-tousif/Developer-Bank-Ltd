@@ -1,5 +1,4 @@
 import React from 'react';
-// import './video.css';
 import Video from '../../Assets/video.mp4';
 
 export default function HeroVideo() {
