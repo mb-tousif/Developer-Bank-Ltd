@@ -35,23 +35,23 @@ const router = createBrowserRouter([
                 path: '/signup',
                 element: <Register/>
             },
-            {
-                path: '/dashboard',
-                element: <DashboardLayout/>,
-                // errorElement: <DisplayError></DisplayError>,
-                children: [
-                    {
-                        path: '/dashboard',
-                        element: <Dashboard/>
-                    },
-                    {
-                        path: '/dashboard/moneyTransfer',
-                        element: <MoneyTransfer/>
-                    },
-                ]
-            }
         ]
     },
+    {
+        path: '/dashboard',
+        element: <DashboardLayout/>,
+        // errorElement: <DisplayError></DisplayError>,
+        children: [
+            {
+                path: '/dashboard',
+                element: <Dashboard/>
+            },
+            {
+                path: '/dashboard/moneyTransfer',
+                element: <MoneyTransfer/>
+            },
+        ]
+    }
     
 ])
 
