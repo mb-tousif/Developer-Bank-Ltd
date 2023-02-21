@@ -11,9 +11,10 @@ export default function SideNavbar() {
   return (
     <div className={toggle ? "sidebar" : "sidebar open"}>
       <div className="logo-details">
-        <i class='bx bxs-bank icon' onClick={()=>navigate("/")}></i>
-        <div className="logo_name mx-auto">DBL</div>
-        <i className={toggle ? "bx bx-menu" : "bx bxs-x-square"} id="btn" onClick={()=>handleToggle()}></i>
+        {
+          !toggle ?<><i className="bx bxs-bank icon" onClick={()=>navigate("/")}></i>
+          <div className="logo_name mx-auto">DBL</div><i className={toggle ? "bx bx-menu" : "bx bxs-x-square"} onClick={()=>handleToggle()}></i></>:<i className="bx bx-menu" onClick={()=>handleToggle()}></i>
+        }
       </div>
       <ul className="nav-list">
         <li>

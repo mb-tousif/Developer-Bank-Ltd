@@ -11,7 +11,6 @@ export default function Navbar() {
   // const [open, setOpen] = useState(false);
   // NAVBAR SCROLL UP AND DOWN
   const [show, setShow] = useState(false)
-  console.log(show)
   const controlNavbar = () => {
     if (window.scrollY > 100) {
       setShow(true)
