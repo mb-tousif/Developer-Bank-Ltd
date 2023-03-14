@@ -8,12 +8,13 @@ import Dashboard from "../Pages/Dashboard/Dashboard";
 import DashboardLayout from "../Layout/DashboardLayout";
 import MoneyTransfer from "../Pages/Dashboard/MoneyTransfer";
 import Carriers from "../Pages/Carriers/Carriers";
+import Page404 from "../Components/Page404";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Main/> ,
-        // errorElement: <DisplayError></DisplayError>,
+        errorElement: <Page404/>,
         children: [
             {
                 path: '/',
@@ -35,24 +36,23 @@ const router = createBrowserRouter([
                 path: '/signup',
                 element: <Register/>
             },
-            {
-                path: '/dashboard',
-                element: <DashboardLayout/>,
-                // errorElement: <DisplayError></DisplayError>,
-                children: [
-                    {
-                        path: '/dashboard',
-                        element: <Dashboard/>
-                    },
-                    {
-                        path: '/dashboard/moneyTransfer',
-                        element: <MoneyTransfer/>
-                    },
-                ]
-            }
         ]
     },
-    
+    {
+        path: '/dashboard',
+        element: <DashboardLayout/>,
+        errorElement: <Page404/>,
+        children: [
+            {
+                path: '/dashboard',
+                element: <Dashboard/>
+            },
+            {
+                path: '/dashboard/moneyTransfer',
+                element: <MoneyTransfer/>
+            },
+        ]
+    }
 ])
 
 export default router;
